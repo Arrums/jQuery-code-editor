@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Code Editor</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<section class="header">
+			<div class="header__logo">CodeEditor</div>
+
+			<div class="header__nav">
+				<div class="header__nav__btn active" id="html">HTML</div>
+				<div class="header__nav__btn" id="css">CSS</div>
+				<div class="header__nav__btn" id="javascript">Javascript</div>
+				<div class="header__nav__btn active" id="output">Output</div>
+			</div>
+		</section>
+
+		<section class="container">
+			<textarea id="htmlPanel" class="container__panel">
+<p id="para">Initial content</p></textarea
+			>
+
+			<textarea id="cssPanel" class="container__panel hidden">
+ p { color: crimson;}</textarea
+			>
+
+			<textarea id="javascriptPanel" class="container__panel hidden">
+document.getElementById("para").innerHTML = "Updated content using js";</textarea
+			>
+
+			<iframe id="outputPanel" class="container__panel"></iframe>
+		</section>
+
+		<script type="text/javascript" src="jQuery.js"></script>
+	</body>
+</html>
